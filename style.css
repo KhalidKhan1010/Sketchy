@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .container-zero {
     display: flex;
     justify-content: center;
