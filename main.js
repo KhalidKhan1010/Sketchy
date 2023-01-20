@@ -32,6 +32,7 @@ function drawCanvas(canvasSize){
             canvasBlockDiv.style.border = 'solid black 0.5px';
             canvasBlockDiv.style.flexShrink = 0;
             flexboxesArray[i].append(canvasBlockDiv);
+            canvasBlockDiv.addEventListener('mouseover', changeDivColor);
         }
 
         canvas.append(flexboxesArray[i]);
@@ -50,3 +51,7 @@ document.getElementById('draw-canvas').addEventListener('click', function(){
     createCanvasContainer();
     drawCanvas(Number(document.getElementById('canvas-size').value));
 });
+
+function changeDivColor(e){
+    e.target.style.backgroundColor = 'red';
+}
