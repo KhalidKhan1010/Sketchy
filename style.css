@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+.container-zero {
+    display: flex;
+    justify-content: center;
+}
+.container-one-canvas {
+    /* width: 900px;
+    height: 900px; */
+    border: 0.5px solid black;
+}
+.font-medium{
+    font-size: medium;
+}
