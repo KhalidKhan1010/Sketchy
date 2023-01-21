@@ -53,5 +53,13 @@ document.getElementById('draw-canvas').addEventListener('click', function(){
 });
 
 function changeDivColor(e){
-    e.target.style.backgroundColor = 'red';
+    if(document.getElementById('optionRed').checked)
+        e.target.style.backgroundColor = 'red';
+    else
+        e.target.style.backgroundColor = `rgb(${generateRandomInt(0, 256)} ${generateRandomInt(0, 256)} ${generateRandomInt(0, 256)})`; // 0 inclusive, 256 exclusive
+}
+
+function generateRandomInt(min, max){
+   return Math.floor(Math.random() * (max - min)) + min;
+   // min inclusive, max exclusive
 }
